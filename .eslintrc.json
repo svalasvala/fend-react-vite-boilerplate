@@ -1,11 +1,14 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es2022": true
   },
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+    "ecmaVersion": 13,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "extends": [
     "airbnb-base",
@@ -17,12 +20,7 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
